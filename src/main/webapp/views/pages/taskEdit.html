@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<div ng-controller="taskEditCtrl">
+	<form name="frmTask">
+		<div>
+			<a href="#/tasks" role="button" name="back"
+				class="btn btn-default btn-succes">Voltar</a>
+			<button class="btn btn-primary" ng-click="save(task)"
+				ng-disabled="disabled" ng-disabled="frmTask.$invalid">Salvar</button>
+			<button class="btn btn-danger" ng-click="remove(task)">Excluir</button>
+		</div>
+
+		<div>
+			
+			<div class="form-group row">
+				<label class="col-md-2 control-label">Título: </label>
+				<div class="col-md-10">
+					<input type="text" name="descricao" class="form-control"
+						ng-disabled="disabled" ng-model="task.titulo"
+						ng-maxlength="45"> <i
+						ng-show="frmTask.titulo.$error.maxlength" class="error">Título
+						deve ter no máximo 45 caracteres.</i>
+				</div>
+			</div>
+			
+			
+			<div class="form-group row">
+				<label class="col-md-2 control-label">Descrição: </label>
+				<div class="col-md-10">
+					<input type="text" name="descricao" class="form-control"
+						ng-disabled="disabled" ng-model="task.descricao"
+						ng-maxlength="800"> <i
+						ng-show="frmTask.descricao.$error.maxlength" class="error">Descrição
+						deve ter no máximo 800 caracteres.</i>
+				</div>
+			</div>			
+
+		</div>
+
+		
+	</form>
+
+
+</div>
+

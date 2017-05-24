@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<div >
+	<div  ng-controller="taskCtrl">
+		<div >
+			<a href="#/taskEdit/0"> Novo</a>
+		</div>
+		<div class="card-block">		
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Título</th>
+						<th>Descrição</th>
+						<th>Concluída</th>
+						<th>Data Inclusão</th>
+						<th>Ações</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="task in tasks">
+						<td>{{task.titulo}}</td>
+						<td>{{task.descricao}}</td>
+						<td><input type="checkbox" ng-model="task.status" ng-click="status(task)"></td>
+						<td>{{task.dataInclusao | date:'dd/MM/yyyy'}}</td>
+						<td><a class="tn btn-sm btn-primary"
+							href="#/taskEdit/{{task.id}}"><i
+								class="fa fa-edit"></i></a>
+							<a class="tn btn-sm btn-danger" ng-click="remove(task)"><i
+								class="fa fa-times"></i></a></td>
+					</tr>
+				</tbody>
+			</table>			
+		</div>
+	</div>
+</div>

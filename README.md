@@ -6,7 +6,6 @@ Tecnologias utilizadas
 
 - Java
 - JSF 2.1
-- JasRX
 - Maven
 - Banco de Dados MySQL
 - AngularJS

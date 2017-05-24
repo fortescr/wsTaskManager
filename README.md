@@ -19,3 +19,5 @@ Passos para rodar o projeto
 - Baixe o projeto no eclipse e atualize as dependências através do Maven.
 - Inclua o projeto no Tomcat.
 - Rode o serviço e acesse o sistema através da url //seu_host/WebServiceRest.
+
+O arquivo de filtro Cors, localizado no pacote com.taskManager.util não é utilizado, porém pode ser habilitado caso queira rodar o front-end separado do projeto.

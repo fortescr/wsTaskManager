@@ -14,7 +14,7 @@ Tecnologias utilizadas
 
 Passos para rodar o projeto
 
-- Crie o bando de dados no MySQL e altere as configurações de banco do arquivo persistence.xml.
+- Crie o bando de dados no MySQL e altere as configurações de banco do arquivo persistence.xml, caso necessário.
 - Baixe o projeto no eclipse e atualize as dependências através do Maven.
 - Inclua o projeto no Tomcat.
 - Rode o serviço e acesse o sistema através da url //seu_host/WebServiceRest.
